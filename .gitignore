@@ -1,0 +1,10 @@
+# Data & models
+data/
+*.zip
+*.pth
+# Python bytecode
+__pycache__/
+*.pyc
+# Jupyter
+.ipynb_checkpoints/
+.DS_Store
