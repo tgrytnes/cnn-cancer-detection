@@ -29,9 +29,9 @@
 | Metric         | Simple CNN   | MobileNetV2 | EfficientNetB4 (frozen) | EfficientNetB4 (fine-tuned) |
 |----------------|--------------|-------------|---------------------------|-------------------------------|
 | Train Acc      | 85.1%        | 84.9%       | 85.7%                    | 96.9%                         |
-| Train AUC      | 0.923        | 0.920       | 0.926                    | 0.9944                        |
+| Train AUC      | 92.3%        | 92.0%       | 92.6%                    | 99.44%                        |
 | Val Acc        | 82.6%        | 85.6%       | 86.7%                    | 95.95%                        |
-| Val AUC        | 0.900        | 0.927       | 0.9358                   | 0.9900                        |
-| Val Loss       | 0.418        | 0.335       | 0.314                    | 0.113                         |
+| Val AUC        | 90.0%        | 92.7%       | 93.58%                   | 99.00%                        |
+| Val Loss       | 41.8%        | 33.5%       | 31.4%                    | 11.3%                         |
 
 *Prefer the model with the highest **AUC** (threshold-independent). If sensitivity is prioritized, calibrate the decision threshold using ROC/PR analyses.*
