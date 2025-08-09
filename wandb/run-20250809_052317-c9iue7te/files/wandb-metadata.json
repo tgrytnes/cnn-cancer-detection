@@ -1,0 +1,38 @@
+{
+  "os": "Linux-6.8.0-59-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.11.0rc1",
+  "startedAt": "2025-08-09T05:23:17.694362Z",
+  "program": "workspace/cnn_cancer_detection_template 5.ipynb",
+  "git": {
+    "remote": "git@github.com:tgrytnes/cnn-cancer-detection.git",
+    "commit": "4d7ab22a7f1383e962be73ac2155839b43c28e38"
+  },
+  "email": "thomas.grytnes+m8xa7mfr@posteo.net",
+  "root": "/workspace",
+  "host": "cea72a581dff",
+  "executable": "/usr/bin/python3",
+  "cpu_count": 48,
+  "cpu_count_logical": 96,
+  "gpu": "NVIDIA A40",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "21474836480",
+      "used": "504627200"
+    }
+  },
+  "memory": {
+    "total": "540644179968"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere",
+      "uuid": "GPU-0156575d-ec4e-e9df-eff1-f1e14f8a7760"
+    }
+  ],
+  "cudaVersion": "12.7",
+  "writerId": "pdkjg4tqoe1eo3oqxxdkxq8oqp76bjio"
+}

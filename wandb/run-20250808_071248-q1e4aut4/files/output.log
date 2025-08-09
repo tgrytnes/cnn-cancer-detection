@@ -1,0 +1,210 @@
+[34m[1mwandb[0m: [33mWARNING[0m WandbCallback is deprecated and will be removed in a future release. Please use the WandbMetricsLogger, WandbModelCheckpoint, and WandbEvalCallback callbacks instead. See https://docs.wandb.ai/guides/integrations/keras for more information.
+[34m[1mwandb[0m: [33mWARNING[0m The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+Epoch 1/5
+2025-08-08 07:12:53.449736: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:442] Loaded cuDNN version 8905
+2025-08-08 07:12:53.527227: I tensorflow/tsl/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2025-08-08 07:12:55.729452: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7167fa918210 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2025-08-08 07:12:55.729506: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA A40, Compute Capability 8.6
+2025-08-08 07:12:55.747310: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2025-08-08 07:12:55.851481: I ./tensorflow/compiler/jit/device_compiler.h:186] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+   2751/Unknown - 55s 18ms/step - loss: 0.4949 - accuracy: 0.7856 - auc: 0.8493INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+2025-08-08 07:13:44.844466: I tensorflow/core/framework/local_rendezvous.cc:425] Local rendezvous send item cancelled. Key hash: 9114175651872119688
+2025-08-08 07:13:44.844555: I tensorflow/core/framework/local_rendezvous.cc:425] Local rendezvous send item cancelled. Key hash: 12913383572606168384
+2025-08-08 07:13:44.844582: I tensorflow/core/framework/local_rendezvous.cc:421] Local rendezvous recv item cancelled. Key hash: 5594269545092082115
+2025-08-08 07:13:44.844598: I tensorflow/core/framework/local_rendezvous.cc:421] Local rendezvous recv item cancelled. Key hash: 6967893007420147053
+2025-08-08 07:13:56.045761: I tensorflow/core/framework/local_rendezvous.cc:421] Local rendezvous recv item cancelled. Key hash: 6394375670331270679
+2025-08-08 07:13:56.045901: I tensorflow/core/framework/local_rendezvous.cc:421] Local rendezvous recv item cancelled. Key hash: 16904395965226847696
+/usr/local/lib/python3.11/dist-packages/keras/src/engine/training.py:3079: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Assets written to: /workspace/wandb/run-20250808_071248-q1e4aut4/files/model-best/assets
+INFO:tensorflow:Assets written to: /workspace/wandb/run-20250808_071248-q1e4aut4/files/model-best/assets
+[34m[1mwandb[0m: Adding directory to artifact (/workspace/wandb/run-20250808_071248-q1e4aut4/files/model-best)... Done. 0.0s
+
+Epoch 1: val_auc improved from -inf to 0.89000, saving model to best_simple.h5
+/usr/local/lib/python3.11/dist-packages/keras/src/engine/training.py:3079: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2751/2751 [==============================] - 68s 22ms/step - loss: 0.4949 - accuracy: 0.7856 - auc: 0.8493 - val_loss: 0.4181 - val_accuracy: 0.8191 - val_auc: 0.8900
+Epoch 2/5
+2747/2751 [============================>.] - ETA: 0s - loss: 0.4083 - accuracy: 0.8208 - auc: 0.8897INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Assets written to: /workspace/wandb/run-20250808_071248-q1e4aut4/files/model-best/assets
+INFO:tensorflow:Assets written to: /workspace/wandb/run-20250808_071248-q1e4aut4/files/model-best/assets
+[34m[1mwandb[0m: Adding directory to artifact (/workspace/wandb/run-20250808_071248-q1e4aut4/files/model-best)... Done. 0.0s
+
+Epoch 2: val_auc did not improve from 0.89000
+2751/2751 [==============================] - 62s 21ms/step - loss: 0.4083 - accuracy: 0.8208 - auc: 0.8897 - val_loss: 0.4079 - val_accuracy: 0.8171 - val_auc: 0.8896
+Epoch 3/5
+2750/2751 [============================>.] - ETA: 0s - loss: 0.3811 - accuracy: 0.8342 - auc: 0.9050INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+/usr/local/lib/python3.11/dist-packages/keras/src/engine/training.py:3079: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Assets written to: /workspace/wandb/run-20250808_071248-q1e4aut4/files/model-best/assets
+INFO:tensorflow:Assets written to: /workspace/wandb/run-20250808_071248-q1e4aut4/files/model-best/assets
+[34m[1mwandb[0m: Adding directory to artifact (/workspace/wandb/run-20250808_071248-q1e4aut4/files/model-best)... Done. 0.0s
+
+Epoch 3: val_auc improved from 0.89000 to 0.89393, saving model to best_simple.h5
+/usr/local/lib/python3.11/dist-packages/keras/src/engine/training.py:3079: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2751/2751 [==============================] - 59s 20ms/step - loss: 0.3811 - accuracy: 0.8342 - auc: 0.9050 - val_loss: 0.4059 - val_accuracy: 0.8176 - val_auc: 0.8939
+Epoch 4/5
+2749/2751 [============================>.] - ETA: 0s - loss: 0.3631 - accuracy: 0.8430 - auc: 0.9145INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a961190>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6a920110>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f52878f10>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f5289edd0>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dfc2750>, 124722787706528), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6df00410>, 124723982128304), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff4790>, 124722783592704), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x716f6dff3810>, 124722781514288), {}).
+INFO:tensorflow:Assets written to: /workspace/wandb/run-20250808_071248-q1e4aut4/files/model-best/assets
+INFO:tensorflow:Assets written to: /workspace/wandb/run-20250808_071248-q1e4aut4/files/model-best/assets
+[34m[1mwandb[0m: Adding directory to artifact (/workspace/wandb/run-20250808_071248-q1e4aut4/files/model-best)... Done. 0.0s
+
+Epoch 4: val_auc improved from 0.89393 to 0.90335, saving model to best_simple.h5
+/usr/local/lib/python3.11/dist-packages/keras/src/engine/training.py:3079: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2751/2751 [==============================] - 50s 17ms/step - loss: 0.3631 - accuracy: 0.8430 - auc: 0.9145 - val_loss: 0.3957 - val_accuracy: 0.8262 - val_auc: 0.9033
+Epoch 5/5
+2748/2751 [============================>.] - ETA: 0s - loss: 0.3491 - accuracy: 0.8498 - auc: 0.9215
+Epoch 5: val_auc did not improve from 0.90335
+2751/2751 [==============================] - 59s 21ms/step - loss: 0.3491 - accuracy: 0.8498 - auc: 0.9215 - val_loss: 0.4346 - val_accuracy: 0.8199 - val_auc: 0.8981
+Simple CNN final metrics: {'loss': 0.3491373360157013, 'accuracy': 0.8497841358184814, 'auc': 0.9214727282524109, 'val_loss': 0.43464726209640503, 'val_accuracy': 0.8199295401573181, 'val_auc': 0.8981177806854248}
+[33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv[0m[33m
+[0m
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m23.2.1[0m[39;49m -> [0m[32;49m25.2[0m
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mpython3 -m pip install --upgrade pip[0m
+Note: you may need to restart the kernel to use updated packages.
+Model: "model_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_2 (InputLayer)        [(None, 96, 96, 3)]       0
+
+ conv2d_1 (Conv2D)           (None, 96, 96, 16)        448
+
+ max_pooling2d_1 (MaxPoolin  (None, 48, 48, 16)        0
+ g2D)
+
+ flatten_1 (Flatten)         (None, 36864)             0
+
+ dense_1 (Dense)             (None, 1)                 36865
+
+=================================================================
+Total params: 37313 (145.75 KB)
+Trainable params: 37313 (145.75 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

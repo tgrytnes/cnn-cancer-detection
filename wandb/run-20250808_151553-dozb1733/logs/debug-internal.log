@@ -1,0 +1,16 @@
+{"time":"2025-08-08T15:15:54.219636716Z","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
+{"time":"2025-08-08T15:15:54.513712279Z","level":"INFO","msg":"stream: created new stream","id":"dozb1733"}
+{"time":"2025-08-08T15:15:54.514237473Z","level":"INFO","msg":"stream: started","id":"dozb1733"}
+{"time":"2025-08-08T15:15:54.514283899Z","level":"INFO","msg":"sender: started","stream_id":"dozb1733"}
+{"time":"2025-08-08T15:15:54.514281873Z","level":"INFO","msg":"writer: started","stream_id":"dozb1733"}
+{"time":"2025-08-08T15:15:54.514372732Z","level":"INFO","msg":"handler: started","stream_id":"dozb1733"}
+{"time":"2025-08-08T16:02:25.304379182Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/thomas-m8xa7mf-student-beans/cnn-cancer-detection/dozb1733/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-08-08T16:21:55.087124762Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-08-08T16:23:57.847726326Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/thomas-m8xa7mf-student-beans/cnn-cancer-detection/dozb1733/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-08-08T17:24:55.182701934Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-08-08T17:31:01.446119426Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-08T17:31:01.626601916Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-08-08T17:31:01.648248098Z","level":"INFO","msg":"stream: closing","id":"dozb1733"}
+{"time":"2025-08-08T17:31:01.648812397Z","level":"INFO","msg":"handler: closed","stream_id":"dozb1733"}
+{"time":"2025-08-08T17:31:01.664686067Z","level":"INFO","msg":"sender: closed","stream_id":"dozb1733"}
+{"time":"2025-08-08T17:31:01.665226404Z","level":"INFO","msg":"stream: closed","id":"dozb1733"}

@@ -1,0 +1,49 @@
+2025-08-08 13:42:20,734 INFO    MainThread:25718 [wandb_setup.py:_flush():80] Current SDK version is 0.21.1
+2025-08-08 13:42:20,735 INFO    MainThread:25718 [wandb_setup.py:_flush():80] Configure stats pid to 25718
+2025-08-08 13:42:20,736 INFO    MainThread:25718 [wandb_setup.py:_flush():80] Loading settings from /root/.config/wandb/settings
+2025-08-08 13:42:20,737 INFO    MainThread:25718 [wandb_setup.py:_flush():80] Loading settings from /workspace/wandb/settings
+2025-08-08 13:42:20,737 INFO    MainThread:25718 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-08-08 13:42:20,738 INFO    MainThread:25718 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /workspace/wandb/run-20250808_134220-n9d9uy21/logs/debug.log
+2025-08-08 13:42:20,740 INFO    MainThread:25718 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /workspace/wandb/run-20250808_134220-n9d9uy21/logs/debug-internal.log
+2025-08-08 13:42:20,741 INFO    MainThread:25718 [wandb_init.py:monkeypatch_ipython():622] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7616bf88d450>
+2025-08-08 13:42:20,742 INFO    MainThread:25718 [wandb_init.py:init():830] calling init triggers
+2025-08-08 13:42:20,743 INFO    MainThread:25718 [wandb_init.py:init():835] wandb.init called with sweep_config: {}
+config: {'arch': 'MobileNetV2', 'epochs': 10, 'batch_size': 64, 'base_lr': 0.0001, 'base_trainable': False, 'dropout': 0.3, '_wandb': {}}
+2025-08-08 13:42:20,744 INFO    MainThread:25718 [wandb_init.py:init():871] starting backend
+2025-08-08 13:42:20,960 INFO    MainThread:25718 [wandb_init.py:init():874] sending inform_init request
+2025-08-08 13:42:20,976 INFO    MainThread:25718 [wandb_init.py:init():882] backend started and connected
+2025-08-08 13:42:20,988 INFO    MainThread:25718 [wandb_run.py:_label_probe_notebook():1318] probe notebook
+2025-08-08 13:42:20,991 INFO    MainThread:25718 [wandb_run.py:_label_probe_notebook():1328] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2025-08-08 13:42:20,992 INFO    MainThread:25718 [wandb_init.py:init():953] updated telemetry
+2025-08-08 13:42:21,099 INFO    MainThread:25718 [wandb_init.py:init():977] communicating run to backend with 90.0 second timeout
+2025-08-08 13:42:21,398 INFO    MainThread:25718 [wandb_init.py:init():1029] starting run threads in backend
+2025-08-08 13:42:21,586 INFO    MainThread:25718 [wandb_run.py:_console_start():2494] atexit reg
+2025-08-08 13:42:21,586 INFO    MainThread:25718 [wandb_run.py:_redirect():2342] redirect: wrap_raw
+2025-08-08 13:42:21,588 INFO    MainThread:25718 [wandb_run.py:_redirect():2411] Wrapping output streams.
+2025-08-08 13:42:21,589 INFO    MainThread:25718 [wandb_run.py:_redirect():2434] Redirects installed.
+2025-08-08 13:42:21,592 INFO    MainThread:25718 [wandb_init.py:init():1075] run started, returning control to user process
+2025-08-08 13:53:31,612 INFO    MainThread:25718 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-08-08 13:59:02,144 INFO    MainThread:25718 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-08-08 13:59:02,145 INFO    MainThread:25718 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-08-08 13:59:02,151 INFO    MainThread:25718 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-08-08 13:59:16,591 INFO    MainThread:25718 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-08-08 13:59:16,593 INFO    MainThread:25718 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-08-08 13:59:16,948 INFO    MainThread:25718 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-08-08 14:00:06,386 INFO    MainThread:25718 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-08-08 14:00:06,387 INFO    MainThread:25718 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-08-08 14:00:07,646 INFO    MainThread:25718 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-08-08 14:05:23,520 INFO    MainThread:25718 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-08-08 14:05:23,521 INFO    MainThread:25718 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-08-08 14:05:23,527 INFO    MainThread:25718 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-08-08 14:05:40,169 INFO    MainThread:25718 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-08-08 14:05:40,170 INFO    MainThread:25718 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-08-08 14:05:40,176 INFO    MainThread:25718 [wandb_run.py:_finish():2260] finishing run thomas-m8xa7mf-student-beans/cnn-cancer-detection/n9d9uy21
+2025-08-08 14:05:40,177 INFO    MainThread:25718 [jupyter.py:save_history():480] not saving jupyter history
+2025-08-08 14:05:40,178 INFO    MainThread:25718 [jupyter.py:save_ipynb():404] not saving jupyter notebook
+2025-08-08 14:05:40,179 INFO    MainThread:25718 [wandb_init.py:_jupyter_teardown():607] cleaning up jupyter logic
+2025-08-08 14:05:40,179 INFO    MainThread:25718 [wandb_run.py:_atexit_cleanup():2459] got exitcode: 0
+2025-08-08 14:05:40,182 INFO    MainThread:25718 [wandb_run.py:_restore():2441] restore
+2025-08-08 14:05:40,182 INFO    MainThread:25718 [wandb_run.py:_restore():2447] restore done
+2025-08-08 14:05:40,730 INFO    MainThread:25718 [wandb_run.py:_footer_history_summary_info():3895] rendering history
+2025-08-08 14:05:40,731 INFO    MainThread:25718 [wandb_run.py:_footer_history_summary_info():3927] rendering summary
+2025-08-08 14:05:40,732 INFO    MainThread:25718 [wandb_run.py:_footer_sync_info():3856] logging synced files

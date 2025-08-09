@@ -1,0 +1,55 @@
+Epoch 1/10
+   2751/Unknown - 51s 17ms/step - loss: 0.4651 - accuracy: 0.7929 - auc: 0.8585
+2025-08-08 07:20:59.527328: I tensorflow/core/framework/local_rendezvous.cc:421] Local rendezvous recv item cancelled. Key hash: 5594269545092082115
+2025-08-08 07:20:59.527444: I tensorflow/core/framework/local_rendezvous.cc:421] Local rendezvous recv item cancelled. Key hash: 6967893007420147053
+2025-08-08 07:21:10.387979: I tensorflow/core/framework/local_rendezvous.cc:421] Local rendezvous recv item cancelled. Key hash: 6394375670331270679
+2025-08-08 07:21:10.388138: I tensorflow/core/framework/local_rendezvous.cc:421] Local rendezvous recv item cancelled. Key hash: 16904395965226847696
+/usr/local/lib/python3.11/dist-packages/keras/src/engine/training.py:3079: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+[34m[1mwandb[0m: Adding directory to artifact (/workspace/wandb/run-20250808_072006-4w1xouhd/files/model-best)... Done. 0.0s
+Epoch 1: val_auc improved from -inf to 0.89760, saving model to best_simple.h5
+/usr/local/lib/python3.11/dist-packages/keras/src/engine/training.py:3079: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2751/2751 [==============================] - 64s 22ms/step - loss: 0.4651 - accuracy: 0.7929 - auc: 0.8585 - val_loss: 0.3965 - val_accuracy: 0.8304 - val_auc: 0.8976
+Epoch 2/10
+2748/2751 [============================>.] - ETA: 0s - loss: 0.3987 - accuracy: 0.8254 - auc: 0.8950
+[34m[1mwandb[0m: Adding directory to artifact (/workspace/wandb/run-20250808_072006-4w1xouhd/files/model-best)... Done. 0.0s
+Epoch 2: val_auc improved from 0.89760 to 0.90393, saving model to best_simple.h5
+/usr/local/lib/python3.11/dist-packages/keras/src/engine/training.py:3079: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2751/2751 [==============================] - 60s 21ms/step - loss: 0.3986 - accuracy: 0.8255 - auc: 0.8950 - val_loss: 0.3819 - val_accuracy: 0.8372 - val_auc: 0.9039
+Epoch 3/10
+2748/2751 [============================>.] - ETA: 0s - loss: 0.3771 - accuracy: 0.8359 - auc: 0.9069
+Epoch 3: val_auc did not improve from 0.90393
+2751/2751 [==============================] - 59s 21ms/step - loss: 0.3771 - accuracy: 0.8359 - auc: 0.9069 - val_loss: 0.4044 - val_accuracy: 0.8325 - val_auc: 0.8950
+Epoch 4/10
+2748/2751 [============================>.] - ETA: 0s - loss: 0.3597 - accuracy: 0.8441 - auc: 0.9161
+Epoch 4: val_auc did not improve from 0.90393
+2751/2751 [==============================] - 56s 20ms/step - loss: 0.3598 - accuracy: 0.8440 - auc: 0.9161 - val_loss: 0.4127 - val_accuracy: 0.8133 - val_auc: 0.8956
+Epoch 5/10
+2751/2751 [==============================] - ETA: 0s - loss: 0.3459 - accuracy: 0.8506 - auc: 0.9230
+Epoch 5: val_auc did not improve from 0.90393
+2751/2751 [==============================] - 60s 21ms/step - loss: 0.3459 - accuracy: 0.8506 - auc: 0.9230 - val_loss: 0.4275 - val_accuracy: 0.8109 - val_auc: 0.8991
+Epoch 6/10
+2747/2751 [============================>.] - ETA: 0s - loss: 0.3356 - accuracy: 0.8559 - auc: 0.9279
+Epoch 6: val_auc did not improve from 0.90393
+2751/2751 [==============================] - 60s 21ms/step - loss: 0.3357 - accuracy: 0.8559 - auc: 0.9279 - val_loss: 0.4812 - val_accuracy: 0.8042 - val_auc: 0.8800
+Epoch 7/10
+2751/2751 [==============================] - ETA: 0s - loss: 0.3255 - accuracy: 0.8613 - auc: 0.9324
+Epoch 7: val_auc did not improve from 0.90393
+2751/2751 [==============================] - 60s 21ms/step - loss: 0.3255 - accuracy: 0.8613 - auc: 0.9324 - val_loss: 0.4342 - val_accuracy: 0.8217 - val_auc: 0.8853
+Epoch 8/10
+2748/2751 [============================>.] - ETA: 0s - loss: 0.3201 - accuracy: 0.8635 - auc: 0.9348
+Epoch 8: val_auc did not improve from 0.90393
+2751/2751 [==============================] - 56s 19ms/step - loss: 0.3201 - accuracy: 0.8636 - auc: 0.9348 - val_loss: 0.4396 - val_accuracy: 0.8134 - val_auc: 0.8848
+Epoch 9/10
+2751/2751 [==============================] - ETA: 0s - loss: 0.3141 - accuracy: 0.8650 - auc: 0.9373
+Epoch 9: val_auc did not improve from 0.90393
+2751/2751 [==============================] - 48s 17ms/step - loss: 0.3141 - accuracy: 0.8650 - auc: 0.9373 - val_loss: 0.4625 - val_accuracy: 0.8035 - val_auc: 0.8850
+Epoch 10/10
+2747/2751 [============================>.] - ETA: 0s - loss: 0.3072 - accuracy: 0.8689 - auc: 0.9402
+Epoch 10: val_auc did not improve from 0.90393
+2751/2751 [==============================] - 58s 20ms/step - loss: 0.3071 - accuracy: 0.8689 - auc: 0.9402 - val_loss: 0.5022 - val_accuracy: 0.7888 - val_auc: 0.8852
+Simple CNN final metrics: {'loss': 0.3071499764919281, 'accuracy': 0.8689410090446472, 'auc': 0.9401803016662598, 'val_loss': 0.5022465586662292, 'val_accuracy': 0.7887740135192871, 'val_auc': 0.8851906657218933}
+All patches: 220025 | Malignant: 89117 (40.5%) | Benign: 130908 (59.5%)
+Train: 187021  |  Val: 33004

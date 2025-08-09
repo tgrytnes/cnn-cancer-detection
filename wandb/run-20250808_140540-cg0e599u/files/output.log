@@ -1,0 +1,29 @@
+[34m[1mwandb[0m: [33mWARNING[0m WandbCallback is deprecated and will be removed in a future release. Please use the WandbMetricsLogger, WandbModelCheckpoint, and WandbEvalCallback callbacks instead. See https://docs.wandb.ai/guides/integrations/keras for more information.
+Epoch 1/10
+2751/2751 [==============================] - 70s 24ms/step - loss: 0.4387 - accuracy: 0.8006 - auc: 0.8727 - val_loss: 0.3444 - val_accuracy: 0.8516 - val_auc: 0.9222 - lr: 1.0000e-04
+Epoch 2/10
+2751/2751 [==============================] - 67s 24ms/step - loss: 0.3620 - accuracy: 0.8434 - auc: 0.9137 - val_loss: 0.3262 - val_accuracy: 0.8595 - val_auc: 0.9306 - lr: 1.0000e-04
+Epoch 3/10
+2749/2751 [============================>.] - ETA: 0s - loss: 0.3472 - accuracy: 0.8516 - auc: 0.9206
+Epoch 3: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-05.
+2751/2751 [==============================] - 65s 23ms/step - loss: 0.3472 - accuracy: 0.8516 - auc: 0.9206 - val_loss: 0.3194 - val_accuracy: 0.8628 - val_auc: 0.9336 - lr: 1.0000e-04
+Epoch 4/10
+2751/2751 [==============================] - 66s 24ms/step - loss: 0.3409 - accuracy: 0.8539 - auc: 0.9236 - val_loss: 0.3180 - val_accuracy: 0.8652 - val_auc: 0.9345 - lr: 5.0000e-05
+Epoch 5/10
+2749/2751 [============================>.] - ETA: 0s - loss: 0.3390 - accuracy: 0.8552 - auc: 0.9244
+Epoch 5: ReduceLROnPlateau reducing learning rate to 2.499999936844688e-05.
+2751/2751 [==============================] - 66s 23ms/step - loss: 0.3390 - accuracy: 0.8552 - auc: 0.9244 - val_loss: 0.3158 - val_accuracy: 0.8652 - val_auc: 0.9353 - lr: 5.0000e-05
+Epoch 6/10
+2751/2751 [==============================] - 67s 24ms/step - loss: 0.3370 - accuracy: 0.8565 - auc: 0.9254 - val_loss: 0.3151 - val_accuracy: 0.8656 - val_auc: 0.9355 - lr: 2.5000e-05
+Epoch 7/10
+2751/2751 [==============================] - ETA: 0s - loss: 0.3356 - accuracy: 0.8569 - auc: 0.9260
+Epoch 7: ReduceLROnPlateau reducing learning rate to 1.249999968422344e-05.
+2751/2751 [==============================] - 67s 24ms/step - loss: 0.3356 - accuracy: 0.8569 - auc: 0.9260 - val_loss: 0.3148 - val_accuracy: 0.8666 - val_auc: 0.9357 - lr: 2.5000e-05
+Epoch 8/10
+2751/2751 [==============================] - 63s 22ms/step - loss: 0.3353 - accuracy: 0.8576 - auc: 0.9261 - val_loss: 0.3142 - val_accuracy: 0.8661 - val_auc: 0.9358 - lr: 1.2500e-05
+Epoch 9/10
+2751/2751 [==============================] - ETA: 0s - loss: 0.3359 - accuracy: 0.8565 - auc: 0.9258
+Epoch 9: ReduceLROnPlateau reducing learning rate to 6.24999984211172e-06.
+2751/2751 [==============================] - 66s 23ms/step - loss: 0.3359 - accuracy: 0.8565 - auc: 0.9258 - val_loss: 0.3140 - val_accuracy: 0.8667 - val_auc: 0.9360 - lr: 1.2500e-05
+Epoch 10/10
+2751/2751 [==============================] - 66s 24ms/step - loss: 0.3350 - accuracy: 0.8568 - auc: 0.9263 - val_loss: 0.3139 - val_accuracy: 0.8667 - val_auc: 0.9360 - lr: 6.2500e-06

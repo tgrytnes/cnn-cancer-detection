@@ -1,0 +1,5 @@
+model,run_name,run_id,val_auc,val_accuracy,val_precision_pos,val_recall_pos,val_loss
+EffNet-B4 tuned best (17M),efficientnet-b4-finetune,dozb1733,0.990503,0.960027,,,0.111339
+MobileNetV2 (2.3M),mobilenetv2-ft,cg0e599u,0.935995,0.866652,,,0.313866
+EffNet-B4 init (17M),efficientnet-b4-ft,u50k6nge,0.927973,0.856244,,,0.333432
+Simple CNN (6k params),simple-cnn,hmn8tq6c,0.883839,0.807408,,,0.464316

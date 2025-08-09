@@ -1,0 +1,5 @@
+[34m[1mwandb[0m: [33mWARNING[0m WandbCallback is deprecated and will be removed in a future release. Please use the WandbMetricsLogger, WandbModelCheckpoint, and WandbEvalCallback callbacks instead. See https://docs.wandb.ai/guides/integrations/keras for more information.
+Epoch 1/10
+2751/2751 [==============================] - 61s 21ms/step - loss: 0.4440 - accuracy: 0.8003 - auc: 0.8705 - val_loss: 0.3479 - val_accuracy: 0.8487 - val_auc: 0.9205 - lr: 1.0000e-04
+Epoch 2/10
+1420/2751 [==============>...............] - ETA: 23s - loss: 0.3694 - accuracy: 0.8401 - auc: 0.9102

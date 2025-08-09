@@ -1,0 +1,192 @@
+[34m[1mwandb[0m: [33mWARNING[0m WandbCallback is deprecated and will be removed in a future release. Please use the WandbMetricsLogger, WandbModelCheckpoint, and WandbEvalCallback callbacks instead. See https://docs.wandb.ai/guides/integrations/keras for more information.
+[34m[1mwandb[0m: [33mWARNING[0m The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+Epoch 1/5
+2025-08-07 16:11:33.605875: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:442] Loaded cuDNN version 8905
+2025-08-07 16:11:33.674640: I tensorflow/tsl/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2025-08-07 16:11:35.565741: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x78a7a0003550 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2025-08-07 16:11:35.565817: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA A40, Compute Capability 8.6
+2025-08-07 16:11:35.584897: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2025-08-07 16:11:35.729023: I ./tensorflow/compiler/jit/device_compiler.h:186] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+   2751/Unknown - 54s 17ms/step - loss: 0.4729 - accuracy: 0.7881 - auc: 0.8533INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e753d50>, 132675485209328), {}).
+2025-08-07 16:12:23.890497: I tensorflow/core/framework/local_rendezvous.cc:421] Local rendezvous recv item cancelled. Key hash: 14377308153243459684
+2025-08-07 16:12:23.890582: I tensorflow/core/framework/local_rendezvous.cc:421] Local rendezvous recv item cancelled. Key hash: 12445187834849197734
+/usr/local/lib/python3.11/dist-packages/keras/src/engine/training.py:3079: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e753d50>, 132675485209328), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e676e50>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e676e50>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6c8cd0>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6c8cd0>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6fb310>, 132675485217568), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6fb310>, 132675485217568), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e25a550>, 132675485209328), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e25a550>, 132675485209328), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e2ae110>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e2ae110>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e102810>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e102810>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e15ba90>, 132675485217568), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e15ba90>, 132675485217568), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e753d50>, 132675485209328), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e753d50>, 132675485209328), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e676e50>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e676e50>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6c8cd0>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6c8cd0>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6fb310>, 132675485217568), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6fb310>, 132675485217568), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e25a550>, 132675485209328), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e25a550>, 132675485209328), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e2ae110>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e2ae110>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e102810>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e102810>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e15ba90>, 132675485217568), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e15ba90>, 132675485217568), {}).
+INFO:tensorflow:Assets written to: /workspace/wandb/run-20250807_161128-qkvzh1m2/files/model-best/assets
+INFO:tensorflow:Assets written to: /workspace/wandb/run-20250807_161128-qkvzh1m2/files/model-best/assets
+[34m[1mwandb[0m: Adding directory to artifact (/workspace/wandb/run-20250807_161128-qkvzh1m2/files/model-best)... Done. 0.0s
+
+Epoch 1: val_auc improved from -inf to 0.89354, saving model to best_simple.h5
+/usr/local/lib/python3.11/dist-packages/keras/src/engine/training.py:3079: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2751/2751 [==============================] - 66s 22ms/step - loss: 0.4729 - accuracy: 0.7881 - auc: 0.8533 - val_loss: 0.4221 - val_accuracy: 0.8167 - val_auc: 0.8935
+Epoch 2/5
+2750/2751 [============================>.] - ETA: 0s - loss: 0.4041 - accuracy: 0.8224 - auc: 0.8923
+Epoch 2: val_auc did not improve from 0.89354
+2751/2751 [==============================] - 61s 21ms/step - loss: 0.4041 - accuracy: 0.8224 - auc: 0.8923 - val_loss: 0.4297 - val_accuracy: 0.8032 - val_auc: 0.8799
+Epoch 3/5
+2742/2751 [============================>.] - ETA: 0s - loss: 0.3787 - accuracy: 0.8349 - auc: 0.9066INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e753d50>, 132675485209328), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e753d50>, 132675485209328), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e676e50>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e676e50>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6c8cd0>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6c8cd0>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6fb310>, 132675485217568), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6fb310>, 132675485217568), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e25a550>, 132675485209328), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e25a550>, 132675485209328), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e2ae110>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e2ae110>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e102810>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e102810>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e15ba90>, 132675485217568), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e15ba90>, 132675485217568), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e753d50>, 132675485209328), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e753d50>, 132675485209328), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e676e50>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e676e50>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6c8cd0>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6c8cd0>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6fb310>, 132675485217568), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e6fb310>, 132675485217568), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e25a550>, 132675485209328), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(3, 3, 3, 16), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e25a550>, 132675485209328), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e2ae110>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(16,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e2ae110>, 132675485208848), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e102810>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(36864, 1), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e102810>, 132675485217088), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e15ba90>, 132675485217568), {}).
+INFO:tensorflow:Unsupported signature for serialization: ((TensorSpec(shape=(1,), dtype=tf.float32, name='gradient'), <tensorflow.python.framework.func_graph.UnknownArgument object at 0x78ab0e15ba90>, 132675485217568), {}).
+INFO:tensorflow:Assets written to: /workspace/wandb/run-20250807_161128-qkvzh1m2/files/model-best/assets
+INFO:tensorflow:Assets written to: /workspace/wandb/run-20250807_161128-qkvzh1m2/files/model-best/assets
+[34m[1mwandb[0m: Adding directory to artifact (/workspace/wandb/run-20250807_161128-qkvzh1m2/files/model-best)... Done. 0.0s
+
+Epoch 3: val_auc improved from 0.89354 to 0.89930, saving model to best_simple.h5
+/usr/local/lib/python3.11/dist-packages/keras/src/engine/training.py:3079: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+2751/2751 [==============================] - 44s 15ms/step - loss: 0.3786 - accuracy: 0.8350 - auc: 0.9067 - val_loss: 0.3961 - val_accuracy: 0.8271 - val_auc: 0.8993
+Epoch 4/5
+2751/2751 [==============================] - ETA: 0s - loss: 0.3590 - accuracy: 0.8442 - auc: 0.9166
+Epoch 4: val_auc did not improve from 0.89930
+2751/2751 [==============================] - 59s 21ms/step - loss: 0.3590 - accuracy: 0.8442 - auc: 0.9166 - val_loss: 0.4058 - val_accuracy: 0.8207 - val_auc: 0.8989
+Epoch 5/5
+2750/2751 [============================>.] - ETA: 0s - loss: 0.3450 - accuracy: 0.8513 - auc: 0.9235
+Epoch 5: val_auc improved from 0.89930 to 0.90028, saving model to best_simple.h5
+2751/2751 [==============================] - 60s 21ms/step - loss: 0.3450 - accuracy: 0.8513 - auc: 0.9234 - val_loss: 0.4176 - val_accuracy: 0.8264 - val_auc: 0.9003
+Simple CNN final metrics: {'loss': 0.345045804977417, 'accuracy': 0.8512725830078125, 'auc': 0.9234449863433838, 'val_loss': 0.41757306456565857, 'val_accuracy': 0.8263833522796631, 'val_auc': 0.9002836346626282}
+Epoch 1/10
+2751/2751 [==============================] - 70s 24ms/step - loss: 0.4395 - accuracy: 0.8000 - auc: 0.8723 - val_loss: 0.3468 - val_accuracy: 0.8500 - val_auc: 0.9208 - lr: 1.0000e-04
+Epoch 2/10
+2751/2751 [==============================] - 60s 21ms/step - loss: 0.3623 - accuracy: 0.8440 - auc: 0.9134 - val_loss: 0.3270 - val_accuracy: 0.8605 - val_auc: 0.9301 - lr: 1.0000e-04
+Epoch 3/10
+2751/2751 [==============================] - ETA: 0s - loss: 0.3471 - accuracy: 0.8508 - auc: 0.9206
+Epoch 3: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-05.
+2751/2751 [==============================] - 63s 23ms/step - loss: 0.3471 - accuracy: 0.8508 - auc: 0.9206 - val_loss: 0.3202 - val_accuracy: 0.8643 - val_auc: 0.9332 - lr: 1.0000e-04
+Epoch 4/10
+2751/2751 [==============================] - 57s 20ms/step - loss: 0.3409 - accuracy: 0.8537 - auc: 0.9235 - val_loss: 0.3181 - val_accuracy: 0.8656 - val_auc: 0.9342 - lr: 5.0000e-05
+Epoch 5/10
+2750/2751 [============================>.] - ETA: 0s - loss: 0.3390 - accuracy: 0.8545 - auc: 0.9245
+Epoch 5: ReduceLROnPlateau reducing learning rate to 2.499999936844688e-05.
+2751/2751 [==============================] - 58s 21ms/step - loss: 0.3390 - accuracy: 0.8545 - auc: 0.9245 - val_loss: 0.3163 - val_accuracy: 0.8653 - val_auc: 0.9350 - lr: 5.0000e-05
+Epoch 6/10
+2751/2751 [==============================] - 59s 21ms/step - loss: 0.3373 - accuracy: 0.8564 - auc: 0.9251 - val_loss: 0.3153 - val_accuracy: 0.8660 - val_auc: 0.9353 - lr: 2.5000e-05
+Epoch 7/10
+2750/2751 [============================>.] - ETA: 0s - loss: 0.3370 - accuracy: 0.8562 - auc: 0.9253
+Epoch 7: ReduceLROnPlateau reducing learning rate to 1.249999968422344e-05.
+2751/2751 [==============================] - 64s 23ms/step - loss: 0.3370 - accuracy: 0.8562 - auc: 0.9253 - val_loss: 0.3151 - val_accuracy: 0.8668 - val_auc: 0.9355 - lr: 2.5000e-05
+Epoch 8/10
+2751/2751 [==============================] - 64s 23ms/step - loss: 0.3350 - accuracy: 0.8579 - auc: 0.9262 - val_loss: 0.3145 - val_accuracy: 0.8665 - val_auc: 0.9356 - lr: 1.2500e-05
+Epoch 9/10
+2751/2751 [==============================] - ETA: 0s - loss: 0.3363 - accuracy: 0.8558 - auc: 0.9257
+Epoch 9: ReduceLROnPlateau reducing learning rate to 6.24999984211172e-06.
+2751/2751 [==============================] - 59s 21ms/step - loss: 0.3363 - accuracy: 0.8558 - auc: 0.9257 - val_loss: 0.3143 - val_accuracy: 0.8664 - val_auc: 0.9358 - lr: 1.2500e-05
+Epoch 10/10
+2751/2751 [==============================] - 58s 21ms/step - loss: 0.3357 - accuracy: 0.8568 - auc: 0.9260 - val_loss: 0.3141 - val_accuracy: 0.8666 - val_auc: 0.9358 - lr: 6.2500e-06
+Epoch 1/10
+1376/1376 [==============================] - 250s 172ms/step - loss: 0.4716 - accuracy: 0.7847 - auc: 0.8569 - val_loss: 0.3922 - val_accuracy: 0.8300 - val_auc: 0.9032 - lr: 1.0000e-04
+Epoch 2/10
+1376/1376 [==============================] - 230s 163ms/step - loss: 0.3851 - accuracy: 0.8302 - auc: 0.9036 - val_loss: 0.3613 - val_accuracy: 0.8433 - val_auc: 0.9165 - lr: 1.0000e-04
+Epoch 3/10
+1375/1376 [============================>.] - ETA: 0s - loss: 0.3662 - accuracy: 0.8396 - auc: 0.9120
+Epoch 3: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-05.
+1376/1376 [==============================] - 222s 159ms/step - loss: 0.3662 - accuracy: 0.8396 - auc: 0.9120 - val_loss: 0.3473 - val_accuracy: 0.8492 - val_auc: 0.9225 - lr: 1.0000e-04
+Epoch 4/10
+1376/1376 [==============================] - 225s 160ms/step - loss: 0.3574 - accuracy: 0.8445 - auc: 0.9160 - val_loss: 0.3423 - val_accuracy: 0.8517 - val_auc: 0.9244 - lr: 5.0000e-05
+Epoch 5/10
+1375/1376 [============================>.] - ETA: 0s - loss: 0.3539 - accuracy: 0.8457 - auc: 0.9175
+Epoch 5: ReduceLROnPlateau reducing learning rate to 2.499999936844688e-05.
+1376/1376 [==============================] - 224s 161ms/step - loss: 0.3539 - accuracy: 0.8457 - auc: 0.9175 - val_loss: 0.3383 - val_accuracy: 0.8537 - val_auc: 0.9260 - lr: 5.0000e-05
+Epoch 6/10
+1376/1376 [==============================] - 230s 163ms/step - loss: 0.3510 - accuracy: 0.8470 - auc: 0.9190 - val_loss: 0.3366 - val_accuracy: 0.8542 - val_auc: 0.9267 - lr: 2.5000e-05
+Epoch 7/10
+1375/1376 [============================>.] - ETA: 0s - loss: 0.3498 - accuracy: 0.8478 - auc: 0.9193
+Epoch 7: ReduceLROnPlateau reducing learning rate to 1.249999968422344e-05.
+1376/1376 [==============================] - 226s 159ms/step - loss: 0.3498 - accuracy: 0.8478 - auc: 0.9194 - val_loss: 0.3350 - val_accuracy: 0.8548 - val_auc: 0.9274 - lr: 2.5000e-05
+Epoch 8/10
+1376/1376 [==============================] - 222s 159ms/step - loss: 0.3488 - accuracy: 0.8482 - auc: 0.9198 - val_loss: 0.3343 - val_accuracy: 0.8557 - val_auc: 0.9277 - lr: 1.2500e-05
+Epoch 9/10
+1375/1376 [============================>.] - ETA: 0s - loss: 0.3484 - accuracy: 0.8482 - auc: 0.9200
+Epoch 9: ReduceLROnPlateau reducing learning rate to 6.24999984211172e-06.
+1376/1376 [==============================] - 224s 162ms/step - loss: 0.3484 - accuracy: 0.8482 - auc: 0.9200 - val_loss: 0.3336 - val_accuracy: 0.8558 - val_auc: 0.9280 - lr: 1.2500e-05
+Epoch 10/10
+1376/1376 [==============================] - 227s 161ms/step - loss: 0.3482 - accuracy: 0.8484 - auc: 0.9200 - val_loss: 0.3332 - val_accuracy: 0.8559 - val_auc: 0.9282 - lr: 6.2500e-06
+Epoch 1/10
+1376/1376 [==============================] - 235s 161ms/step - loss: 0.4716 - accuracy: 0.7845 - auc: 0.8564 - val_loss: 0.3947 - val_accuracy: 0.8290 - val_auc: 0.9015 - lr: 1.0000e-04
+Epoch 2/10
+1376/1376 [==============================] - 231s 163ms/step - loss: 0.3867 - accuracy: 0.8295 - auc: 0.9024 - val_loss: 0.3631 - val_accuracy: 0.8424 - val_auc: 0.9154 - lr: 1.0000e-04
+Epoch 3/10
+1375/1376 [============================>.] - ETA: 0s - loss: 0.3672 - accuracy: 0.8387 - auc: 0.9113
+Epoch 3: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-05.
+1376/1376 [==============================] - 227s 163ms/step - loss: 0.3672 - accuracy: 0.8387 - auc: 0.9113 - val_loss: 0.3488 - val_accuracy: 0.8486 - val_auc: 0.9216 - lr: 1.0000e-04
+Epoch 4/10
+1376/1376 [==============================] - 224s 160ms/step - loss: 0.3585 - accuracy: 0.8436 - auc: 0.9154 - val_loss: 0.3438 - val_accuracy: 0.8510 - val_auc: 0.9236 - lr: 5.0000e-05
+Epoch 5/10
+1375/1376 [============================>.] - ETA: 0s - loss: 0.3543 - accuracy: 0.8457 - auc: 0.9173
+Epoch 5: ReduceLROnPlateau reducing learning rate to 2.499999936844688e-05.
+1376/1376 [==============================] - 227s 160ms/step - loss: 0.3543 - accuracy: 0.8457 - auc: 0.9173 - val_loss: 0.3397 - val_accuracy: 0.8533 - val_auc: 0.9253 - lr: 5.0000e-05
+Epoch 6/10
+1376/1376 [==============================] - 223s 160ms/step - loss: 0.3522 - accuracy: 0.8475 - auc: 0.9182 - val_loss: 0.3379 - val_accuracy: 0.8540 - val_auc: 0.9260 - lr: 2.5000e-05
+Epoch 7/10
+1375/1376 [============================>.] - ETA: 0s - loss: 0.3512 - accuracy: 0.8472 - auc: 0.9186
+Epoch 7: ReduceLROnPlateau reducing learning rate to 1.249999968422344e-05.
+1376/1376 [==============================] - 227s 161ms/step - loss: 0.3512 - accuracy: 0.8472 - auc: 0.9186 - val_loss: 0.3363 - val_accuracy: 0.8549 - val_auc: 0.9268 - lr: 2.5000e-05
+Epoch 8/10
+1376/1376 [==============================] - 223s 160ms/step - loss: 0.3500 - accuracy: 0.8480 - auc: 0.9192 - val_loss: 0.3355 - val_accuracy: 0.8552 - val_auc: 0.9271 - lr: 1.2500e-05
+Epoch 9/10
+1375/1376 [============================>.] - ETA: 0s - loss: 0.3488 - accuracy: 0.8482 - auc: 0.9197
+Epoch 9: ReduceLROnPlateau reducing learning rate to 6.24999984211172e-06.
+1376/1376 [==============================] - 225s 161ms/step - loss: 0.3488 - accuracy: 0.8482 - auc: 0.9197 - val_loss: 0.3348 - val_accuracy: 0.8557 - val_auc: 0.9274 - lr: 1.2500e-05
+Epoch 10/10
+1376/1376 [==============================] - 228s 161ms/step - loss: 0.3480 - accuracy: 0.8487 - auc: 0.9201 - val_loss: 0.3345 - val_accuracy: 0.8559 - val_auc: 0.9275 - lr: 6.2500e-06
+Epoch 1/10
