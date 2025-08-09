@@ -1,10 +1,19 @@
-# Data & models
-data/
-*.zip
-*.pth
-# Python bytecode
-__pycache__/
-*.pyc
-# Jupyter
-.ipynb_checkpoints/
-.DS_Store
+# Envs & secrets
+.venv/
+venv/
+.env
+.env.*
+
+# Experiment artefacts
+wandb/
+logs/
+checkpoints/
+*.h5
+*.ckpt*
+*.tfrecord
+
+# IDE/OS noise
+.vscode/
+.idea/
+Thumbs.db
+Icon?
