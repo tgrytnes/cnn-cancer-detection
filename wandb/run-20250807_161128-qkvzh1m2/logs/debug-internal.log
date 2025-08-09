@@ -1,7 +1,0 @@
-{"time":"2025-08-07T16:11:29.091632314Z","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
-{"time":"2025-08-07T16:11:29.356127515Z","level":"INFO","msg":"stream: created new stream","id":"qkvzh1m2"}
-{"time":"2025-08-07T16:11:29.357462621Z","level":"INFO","msg":"stream: started","id":"qkvzh1m2"}
-{"time":"2025-08-07T16:11:29.357596427Z","level":"INFO","msg":"writer: Do: started","stream_id":"qkvzh1m2"}
-{"time":"2025-08-07T16:11:29.357637994Z","level":"INFO","msg":"handler: started","stream_id":"qkvzh1m2"}
-{"time":"2025-08-07T16:11:29.357657647Z","level":"INFO","msg":"sender: started","stream_id":"qkvzh1m2"}
-{"time":"2025-08-07T16:15:45.050298966Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/thomas-m8xa7mf-student-beans/cnn-cancer-detection/qkvzh1m2/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
