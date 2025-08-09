@@ -1,7 +1,7 @@
 # CNN Cancer Detection – Week-3 Notebook
 *Kaggle Histopathologic Cancer Detection challenge*
 
-**All experiments, code, and analysis are shown in the accompanying Jupyter notebook in this repository.**
+**All experiments, code, and analysis are shown in the accompanying Jupyter notebook in this repository: cnn_cancer_detection.ipynb **
 
 **Problem.** Identify metastatic cancer in small histopathology image patches — a binary classification task (tumor vs. non-tumor).
 
